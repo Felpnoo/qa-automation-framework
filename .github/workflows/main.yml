@@ -16,7 +16,7 @@ jobs:
         playwright install chromium
         playwright install-deps
     - name: Run Tests
-      run: pytest --headless
+      run: pytest
     - name: Upload Report
       if: always()
       uses: actions/upload-artifact@v4
