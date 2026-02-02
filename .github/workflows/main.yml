@@ -14,6 +14,7 @@ jobs:
       run: |
         pip install pytest-playwright pytest-html
         playwright install chromium
+        playwright install-deps
     - name: Run Tests
       run: pytest --headless
     - name: Upload Report
